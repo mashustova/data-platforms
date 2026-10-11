@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<configuration>
+  <property><name>dfs.replication</name><value>3</value></property>
+  <property><name>dfs.namenode.rpc-address</name><value>__NN_IP__:9000</value></property>
+  <property><name>dfs.namenode.rpc-bind-host</name><value>__NN_IP__</value></property>
+  <property><name>dfs.namenode.http-address</name><value>__NN_IP__:9870</value></property>
+  <property><name>dfs.namenode.secondary.http-address</name><value>__NN_IP__:9868</value></property>
+  <property><name>dfs.namenode.name.dir</name><value>file://__HADOOP_USER_HOME__/hdfs/name</value></property>
+  <property><name>dfs.datanode.data.dir</name><value>file://__HADOOP_USER_HOME__/hdfs/data</value></property>
+  <property><name>dfs.namenode.checkpoint.dir</name><value>file://__HADOOP_USER_HOME__/hdfs/checkpoint</value></property>
+</configuration>
