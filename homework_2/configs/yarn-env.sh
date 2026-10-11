@@ -1,0 +1,10 @@
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+export HADOOP_HOME=/opt/hadoop-3.4.0
+export HADOOP_MAPRED_HOME="$HADOOP_HOME"
+export HADOOP_COMMON_HOME="$HADOOP_HOME"
+export HADOOP_HDFS_HOME="$HADOOP_HOME"
+export HADOOP_YARN_HOME="$HADOOP_HOME"
+export HADOOP_LOG_DIR=/data/hadoop/logs
+export HADOOP_PID_DIR=/data/hadoop/pids
+export YARN_RESOURCEMANAGER_OPTS="-Xmx512m"
+export YARN_NODEMANAGER_OPTS="-Xmx256m"

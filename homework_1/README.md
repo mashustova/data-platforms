@@ -18,7 +18,8 @@ Ubuntu 24.04 x86_64, Hadoop 3.4.0, Java 11, Bash, sudo без пароля. Ис
 На локальном компьютере, из родительского каталога решения:
 
 ```bash
-scp -i ~/.ssh/team17 -o IdentitiesOnly=yes -r homework_1 team@178.236.27.243:~/
+ssh -i ~/.ssh/team17 -o IdentitiesOnly=yes team@178.236.27.243 'mkdir -p /home/team/mashustova'
+scp -i ~/.ssh/team17 -o IdentitiesOnly=yes -r homework_1 team@178.236.27.243:/home/team/mashustova/
 ssh -i ~/.ssh/team17 -o IdentitiesOnly=yes team@178.236.27.243
 ```
 
@@ -35,7 +36,7 @@ ssh -i ~/.ssh/team_internal -o IdentitiesOnly=yes team@team-17-01 'hostname; sud
 На edge:
 
 ```bash
-cd ~/homework_1
+cd /home/team/mashustova/homework_1
 test -f cluster.env || cp cluster.env.example cluster.env
 sed -i 's|^HADOOP_HOME=.*|HADOOP_HOME=/opt/hadoop-3.4.0|' cluster.env
 ```
@@ -132,7 +133,7 @@ ssh -i ~/.ssh/team17 -o IdentitiesOnly=yes -N -o ExitOnForwardFailure=yes \
 
 ## Перезапуск
 
-На edge, в `~/homework_1`:
+На edge, в `/home/team/mashustova/homework_1`:
 
 ```bash
 bash scripts/stop.sh &&
