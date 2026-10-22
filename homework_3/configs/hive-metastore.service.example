@@ -1,0 +1,21 @@
+[Unit]
+Description=Apache Hive metastore
+After=network.target postgresql.service
+
+[Service]
+Type=simple
+User=hadoop
+WorkingDirectory=/home/hadoop
+Environment="JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64"
+Environment="HADOOP_HOME=/opt/hadoop-3.4.0"
+Environment="HADOOP_CONF_DIR=/opt/hadoop-3.4.0/etc/hadoop"
+Environment="HIVE_HOME=/opt/hive"
+Environment="HIVE_CONF_DIR=/opt/hive/conf"
+Environment="HADOOP_HEAPSIZE=512"
+ExecStart=/opt/hive/bin/hive --service metastore
+Restart=no
+TimeoutStopSec=45
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target
