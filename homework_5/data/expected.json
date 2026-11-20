@@ -1,0 +1,81 @@
+{
+  "source": {
+    "order_count": 15,
+    "total_quantity": 27,
+    "revenue": "9709.17"
+  },
+  "filtered": {
+    "order_count": 11,
+    "total_quantity": 25,
+    "revenue": "6909.17"
+  },
+  "excluded_order_ids": [
+    4,
+    5,
+    9,
+    15
+  ],
+  "partitions": [
+    "2026-10-01",
+    "2026-10-02",
+    "2026-10-03"
+  ],
+  "daily_sales": [
+    {
+      "dt": "2026-10-01",
+      "city": "kazan",
+      "order_count": 1,
+      "total_quantity": 1,
+      "revenue": "500.00"
+    },
+    {
+      "dt": "2026-10-01",
+      "city": "moscow",
+      "order_count": 2,
+      "total_quantity": 5,
+      "revenue": "1061.00"
+    },
+    {
+      "dt": "2026-10-02",
+      "city": "kazan",
+      "order_count": 1,
+      "total_quantity": 2,
+      "revenue": "999.98"
+    },
+    {
+      "dt": "2026-10-02",
+      "city": "moscow",
+      "order_count": 2,
+      "total_quantity": 5,
+      "revenue": "691.00"
+    },
+    {
+      "dt": "2026-10-02",
+      "city": "perm",
+      "order_count": 1,
+      "total_quantity": 5,
+      "revenue": "377.50"
+    },
+    {
+      "dt": "2026-10-03",
+      "city": "kazan",
+      "order_count": 1,
+      "total_quantity": 3,
+      "revenue": "299.70"
+    },
+    {
+      "dt": "2026-10-03",
+      "city": "moscow",
+      "order_count": 1,
+      "total_quantity": 1,
+      "revenue": "1999.99"
+    },
+    {
+      "dt": "2026-10-03",
+      "city": "perm",
+      "order_count": 2,
+      "total_quantity": 3,
+      "revenue": "980.00"
+    }
+  ]
+}

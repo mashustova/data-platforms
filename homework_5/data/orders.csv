@@ -1,0 +1,16 @@
+order_id,event_date,city,category,quantity,unit_price,status
+1,2026-10-01,moscow,books,2,350.50,completed
+2,2026-10-01,moscow,food,3,120.00,completed
+3,2026-10-01,kazan,books,1,500.00,completed
+4,2026-10-01,kazan,electronics,1,2500.00,cancelled
+5,2026-10-01,perm,food,0,80.00,completed
+6,2026-10-02,moscow,food,4,110.25,completed
+7,2026-10-02,kazan,books,2,499.99,completed
+8,2026-10-02,perm,food,5,75.50,completed
+9,2026-10-02,perm,books,1,300.00,cancelled
+10,2026-10-02,moscow,books,1,250.00,completed
+11,2026-10-03,moscow,electronics,1,1999.99,completed
+12,2026-10-03,kazan,food,3,99.90,completed
+13,2026-10-03,perm,books,2,450.00,completed
+14,2026-10-03,perm,food,1,80.00,completed
+15,2026-10-03,kazan,books,0,700.00,completed

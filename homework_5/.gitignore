@@ -1,0 +1,8 @@
+local.env
+.venv/
+.prefect/
+results/
+__pycache__/
+*.pyc
+.DS_Store
+evidence/
